@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Javascript Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-80592420-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-80592420-1");
+    </script>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll;
+      font-family: "Fira Sans", sans-serif;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    .resume-wrapper {
+      padding: 150px 100px 50px 100px;
+      min-height: 100vh;
+      min-width: 98vw;
+    }
+    .resume-body {
+      padding: 150px 40px 20px 40px;
+      width: calc(100vw - 208px);
+      border: 2px solid black;
+      position: relative;
+      background: white;
+      font-size: 0;
+    }
+    .resume-title-card {
+      position: absolute;
+      top: -80px;
+      left: calc(50% - 250px);
+      width: 500px;
+      height: 200px;
+      background: white;
+    }
+    .resume-title-card h2 {
+      position: relative;
+      font-size: 36px;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .resume-title-card p {
+      position: relative;
+      font-size: 20px;
+      font-weight: 300;
+      text-align: center;
+      margin: 0;
+    }
+    .resume-content-card {
+      margin: 0;
+      padding: 5px 0;
+      font-size: 18px;
+    }
+
+    .resume-content-section {
+      padding-bottom: 20px;
+    }
+    .resume-content-section p {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .resume-content-section h3 {
+      font-size: 22px;
+    }
+    .experience-period {
+      font-style: italic;
+      margin: 0;
+    }
+    .card-content-wrapper h3 {
+      margin-bottom: 3px;
+      font-weight: 400;
+    }
+    .card-content-wrapper h4 {
+      font-weight: 400;
+      margin: 15px 0;
+    }
+    ul {
+      list-style-type: circle;
+    }
+    ul > li {
+      font-weight: 300;
+    }
+    .resume-content-section:last-child {
+      border: none;
+    }
+    .resume-title-card .contact {
+      font-size: 16px;
+      margin-top: 4px;
+    }
+    .resume-title-card .contact a {
+      color: black;
+    }
+    .responsibility-header {
+      font-weight: 400;
+    }
+    .skill-pill {
+      border-left: 1px solid #cccccc;
+      border-right: 1px solid #cccccc;
+      margin: 10px 10px 0 0;
+      font-size: 18px;
+      border-radius: 20px;
+      padding: 10px;
+      display: inline-block;
+      font-weight: 300;
+    }
+    .skill-pill .self-rating {
+      display: block;
+      font-size: 12px;
+      color: #999;
+    }
+    .font-300 {
+      font-weight: 300;
+    }
+    .link {
+      font-size: 18px;
+    }
+    .small-hr {
+      width: 100px;
+      background: #ccc;
+    }
+    hr {
+      margin-left: 0;
+      height: 2px;
+      border: none;
+      background: black;
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .resume-wrapper {
+        padding: 80px 0 0 0;
+      }
+      .resume-body {
+        width: calc(100vw);
+      }
+    }
+    @media only screen and (max-device-width: 767px) {
+      .resume-wrapper {
+        padding: 0;
+      }
+      .resume-body {
+        width: 100%;
+        padding: 20px;
+        border: none;
+      }
+      .resume-title-card {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        top: 0;
+        left: 0;
+      }
+      p.center {
+        text-align: center;
+      }
+      hr {
+        margin: auto;
+        color: black;
+      }
+      .small-hr {
+        width: 100px;
+        color: #ccc;
+        background: #ccc;
+      }
+      ul {
+        padding-left: 25px;
+      }
+    }
+  </style>
+  <body>
+    <div class="resume-wrapper">
+      <div class="resume-body">
+        <div class="resume-title-card">
+          <h2>Diljit VJ</h2>
+          <p>Javascript Developer</p>
+          <p class="contact">
+            <a href="mailto:diljitvj@gmail.com">diljitvj@gmail.com</a>
+          </p>
+          <p class="contact"><a href="tel:+919998547228">9998547228</a></p>
+        </div>
+        <div class="resume-content-section">
+          <p class="center">
+            A learner at heart who is always in the look out of interesting
+            tools and ways to improve code quality and performance.
+          </p>
+        </div>
+        <hr />
+        <div class="resume-content-section">
+          <h3>Skill Sets</h3>
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h4>Front end</h4>
+              <span class="skill-pill"
+                >HTML<span class="self-rating">Advanced</span></span
+              >
+              <span class="skill-pill"
+                >CSS<span class="self-rating">Advanced</span></span
+              >
+              <span class="skill-pill"
+                >JavaScript<span class="self-rating">Advanced</span></span
+              >
+              <span class="skill-pill"
+                >React JS<span class="self-rating">Advanced</span></span
+              >
+              <span class="skill-pill"
+                >Redux<span class="self-rating">Intermediate</span></span
+              >
+              <span class="skill-pill"
+                >Angular 2/4/6<span class="self-rating">Advanced</span></span
+              >
+              <span class="skill-pill"
+                >Ionic<span class="self-rating">Advanced</span></span
+              >
+              <span class="skill-pill"
+                >Phonegap / Cordova<span class="self-rating"
+                  >Intermediate</span
+                ></span
+              >
+              <span class="skill-pill"
+                >Electron<span class="self-rating">Intermediate</span></span
+              >
+              <span class="skill-pill"
+                >React Native<span class="self-rating">Beginner</span></span
+              >
+              <span class="skill-pill"
+                >Flutter<span class="self-rating">Beginner</span></span
+              >
+              <span class="skill-pill"
+                >Polymer<span class="self-rating">Beginner</span></span
+              >
+              <h4>Back end</h4>
+              <span class="skill-pill"
+                >NodeJS<span class="self-rating">Advanced</span></span
+              >
+              <span class="skill-pill"
+                >GraphQL<span class="self-rating">Advanced</span></span
+              >
+              <h4>Database</h4>
+              <span class="skill-pill"
+                >MySQL<span class="self-rating">Advanced</span></span
+              >
+              <span class="skill-pill"
+                >Mongo DB<span class="self-rating">Intermediate</span></span
+              >
+              <span class="skill-pill"
+                >Dgraph<span class="self-rating">Beginner</span></span
+              >
+              <h4>Dev Ops</h4>
+              <span class="skill-pill"
+                >Nginx<span class="self-rating">Intermediate</span></span
+              >
+              <span class="skill-pill"
+                >AWS<span class="self-rating">Intermediate</span></span
+              >
+              <span class="skill-pill"
+                >GCP<span class="self-rating">Beginner</span></span
+              >
+              <span class="skill-pill"
+                >Azure<span class="self-rating">Beginner</span></span
+              >
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="resume-content-section">
+          <h3>Experience</h3>
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>Y Media Labs, <span class="font-300">Bangalore</span></h3>
+              <p class="experience-period">( Apr 2019 - Present )</p>
+              <p>
+                Y Media labs is a software consultancy firm.
+              </p>
+            </div>
+            <hr class="small-hr" />
+            <div class="card-content-wrapper">
+              <h3>Pikkol, <span class="font-300">Bangalore</span></h3>
+              <p class="experience-period">( Jan 2018 - Feb 2019 )</p>
+              <p>
+                Pikkol is a House/Corporate moving and packing company backed by
+                technology solutions.
+              </p>
+            </div>
+            <hr class="small-hr" />
+            <div class="card-content-wrapper">
+              <h3>Rentongo, <span class="font-300">Bangalore</span></h3>
+              <p class="experience-period">( May 2017 - Dec 2017 )</p>
+              <p>
+                Rentongo is a marketplace and service provider for all stuff
+                rental. It operates in multiple cities in India.
+              </p>
+            </div>
+            <hr class="small-hr" />
+            <div class="card-content-wrapper">
+              <h3>Finovera, <span class="font-300">Bangalore</span></h3>
+              <p class="experience-period">( Aug 2016 - April 2017 )</p>
+              <p>
+                Finovera is an early stage product that helps people manage
+                their personal finances.
+              </p>
+            </div>
+            <hr class="small-hr" />
+            <div class="card-content-wrapper">
+              <h3>Freelancer, <span class="font-300">Bangalore</span></h3>
+              <p class="experience-period">( July 2014 - July 2016 )</p>
+              <p>
+                Coordinated and communicated with customers to plan web
+                development projects from concept through completion, utilizing
+                a variety of web development tools and technology.
+              </p>
+            </div>
+            <hr class="small-hr" />
+            <div class="card-content-wrapper">
+              <h3>
+                Engineers India Ltd., <span class="font-300">New Delhi</span>
+              </h3>
+              <p class="experience-period">( Nov 2009 - Sep 2013 )</p>
+              <p>
+                EIL provides engineering consultancy and EPC services
+                principally focused on the oil & gas and petrochemical
+                industries.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="resume-content-section">
+          <h3>Education</h3>
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>
+                University of Kerala, <span class="font-300">Trivandrum</span>
+              </h3>
+              <p class="experience-period">( May 2005 - May 2009 )</p>
+              <p>Bachelors in Mechanical Engineering</p>
+            </div>
+            <hr class="small-hr" />
+            <div class="card-content-wrapper">
+              <h3>
+                Arya Central School, <span class="font-300">Trivandrum</span>
+              </h3>
+              <p class="experience-period">( May 2004 - May 2005 )</p>
+              <p>Computer Science</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="resume-content-section">
+          <h3>Projects</h3>
+          <a class="link" href="https://github.com/diljitvj">> Github</a>
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>Pikkol Customer Delight (Web application)</h3>
+              <p class="experience-period">( Jan 2018 - Present )</p>
+              <p>Technologies Used: React, Node JS, GraphQL, Apollo, MySQL</p>
+              <h4 class="responsibility-header">Contributions</h4>
+              <ul>
+                <li>Development of an Customer complaint ticketing system.</li>
+                <li>
+                  Worked on the conceptualization and schema design for the
+                  application
+                </li>
+                <li>Backend API design and development</li>
+                <li>Design and development UNIX based authorization system</li>
+                <li>Front End development and API integration.</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="small-hr" />
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>Pikkol Inventory (Web application)</h3>
+              <p class="experience-period">( Aug 2018 - Present )</p>
+              <p>Technologies Used: React, Node JS, GraphQL, Apollo, MySQL</p>
+              <h4 class="responsibility-header">Contributions</h4>
+              <ul>
+                <li>Development of an Customer complaint ticketing system.</li>
+                <li>
+                  Worked on the conceptualization and schema design for the
+                  application
+                </li>
+                <li>Backend API design and development</li>
+                <li>Design and development UNIX based authorization system</li>
+                <li>Front End development and API integration.</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="small-hr" />
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>Helitaxii (Web application & Hybrid mobile App)</h3>
+              <p class="experience-period">( Nov 2017 - Present )</p>
+              <p>Technologies Used: Ionic 3, Node JS, MongoDB</p>
+              <h4 class="responsibility-header">Contributions</h4>
+              <ul>
+                <li>
+                  Worked on the conceptualization and schema design for the
+                  application
+                </li>
+                <li>Development of an Helicopter Taxi booking system</li>
+                <li>Backend API design and development</li>
+                <li>Front End Hybrid App development and API integration.</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="small-hr" />
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>ROG Central (Web application & Android App)</h3>
+              <p class="experience-period">( May 2017 - Dec 2017 )</p>
+              <p>Technologies Used: Angular 5, Typescript,Ionic, Sass</p>
+              <h4 class="responsibility-header">Contributions</h4>
+              <ul>
+                <li>
+                  Development of an Inventory and Vendor management software for
+                  rentongo employees.
+                </li>
+                <li>
+                  Closely worked with the UX design and Product development team
+                  to produce a Web application and a Android mobile app.
+                </li>
+                <li>
+                  Implemented core concepts of a PWA website (Service workers,
+                  Push Notifications, Responsive Design etc.)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="small-hr" />
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>Rentongo Web application</h3>
+              <p class="experience-period">( May 2017 - Dec 2017 )</p>
+              <p>Technologies Used: PHP, Javascript</p>
+              <h4 class="responsibility-header">Contributions</h4>
+              <ul>
+                <li>
+                  Improved performance and responsiveness of existing website.
+                </li>
+                <li>
+                  Continuous upgradation and maintenance of Web application.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="small-hr" />
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>Finovera Mobile App (iOS & Android)</h3>
+              <p class="experience-period">( Aug 2016 - April 2017 )</p>
+              <p>
+                Technologies Used: Cordova/Phonegap, Kendo UI Mobile, jQuery,
+                Javascript ES6, HTML, Less.
+              </p>
+              <h4 class="responsibility-header">Contributions</h4>
+              <ul>
+                <li>
+                  Bill Payment Module design and Integration on Mobile client.
+                </li>
+                <li>
+                  Closely worked with the UX design and Product development team
+                  to produce interactive Mobile client.
+                </li>
+                <li>
+                  Mobile application delivery to iOS App store and Android Play
+                  Store
+                </li>
+                <li>
+                  Implemented the push notification module for both iOS and
+                  Android apps.
+                </li>
+                <li>
+                  Ensured Cross Device and Phone OS version compatibility for
+                  mobile client code.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="small-hr" />
+          <div class="resume-content-card">
+            <div class="card-content-wrapper">
+              <h3>Finovera Web UI</h3>
+              <p class="experience-period">( Aug 2016 - April 2017 )</p>
+              <p>
+                Technologies Used: Kendo UI, jQuery, Javascript ES6, HTML, Less.
+              </p>
+              <h4 class="responsibility-header">Contributions</h4>
+              <ul>
+                <li>
+                  Bill Payment Module design and Integration on Web client.
+                </li>
+                <li>Converting PSD and Wireframes to UI Code.</li>
+                <li>
+                  Was instrumental in redesigning various module from jQuery to
+                  an MVC model using Kendo.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
